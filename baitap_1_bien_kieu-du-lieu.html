@@ -5,22 +5,24 @@
     <title>Bai tap 1: Bien</title>
 </head>
 <body>
-<input type="text" id="name" />
-<button type="button" onclick="xinChao()">
-    Xin chào
-</button>
+
+    <input type="text" id="name" />
+
+    <button type="button" onclick="xinChao()">
+        Xin chào
+    </button>
+
+    <p id="display"></p>
 
 <script>
 
     function xinChao() {
         var name = document.getElementById("name").value;
-        alert("Xin chao " + name);
+        document.getElementById("display").innerHTML = "Xin chao " + name;
     }
 
 </script>
 
 </body>
-
-Chao~!!!!!
 
 </html>
